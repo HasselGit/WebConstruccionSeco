@@ -20,6 +20,9 @@ export function Navbar() {
           <Link href="/biblioteca" className="hidden md:block text-sm font-semibold text-slate-grey hover:text-corporate transition-colors">
             Biblioteca
           </Link>
+          <Link href="/dashboard" className="hidden md:block text-sm font-semibold text-slate-grey hover:text-corporate transition-colors">
+            Contratistas
+          </Link>
           
           {/* Offline/Online Indicator */}
           <div className="flex items-center gap-2 text-[10px] md:text-xs font-semibold px-3 py-1.5 rounded-full bg-steel-silver border border-gray-200 shadow-sm">
