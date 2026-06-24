@@ -8,7 +8,7 @@ export function OriginSection() {
         <div className="md:col-span-5 mb-12 md:mb-0 order-2 md:order-1 relative">
           <div className="aspect-[4/5] rounded-2xl overflow-hidden sunlight-shadow border border-border/50 relative">
             <Image 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9-ojOruE65B75VZQhiN8uiRq34jnMEDCM5n1DBtomZZaeTMFgMS51_jlf_zq29s6HdJmoVPEjKnublgzMnVCDqqUw37dFhdCgElK8uuvWbk9lhLhY2Fz7WKgwm6wmmTbE4swYLPtJp8jnRCUP3Os0F_Xtx6S8O8sAp2FpTBG5J1Z2sm5etTXP27CgAvbyDCTrJ-QREHqYRowPOuqNLJHk8DoGbTJ_elfqN47AtCfatgkQ3mN9qRgFMnfcJoGYfkad2pdewehKH2g"
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
               alt="Arquitecto y clientes colaborando en el diseño de su hogar"
               fill
               className="object-cover"
