@@ -6,17 +6,17 @@ const TEAM = [
   {
     name: "Ing. Julián Martí",
     role: "Director Técnico",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB7PP-SY7U5EIf1dnG7aMt7KC-z6ms0BcMkg4Zd5cZHQL__cxLx-IWeSSdXi-I7aPakdxTsTybi9qYGh4d2d-3nkmaIOBh-hRYTTfEsatl-6Zxa6L8OH2LclX-aXChUFbEze-YBfm4Qv7DR_lmC9LYJrxRgw_Da1RcB7YZJJguKWKETthutlKuSNrvjt5hzVZBYXFCjcDxBZu0s7z1KzfIuH5x6t2XrPtPhYoBlFjr48sTXPICJLEub6_yioKCM5pfCuqG7VgJG160"
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Arq. Elena Rossi",
     role: "Diseño & Sustentabilidad",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAEPF8d3akTM4T6OdF7i5OYxiXGncT9BT4gPFSvFwv9nbLfVAZgdN9Svs1plXrNVZntWOXko9hqwJK9lrryLIxjJGuoumE0gQCiW8t6XTjtw2CO-sjN4L6tS6vq_3pDTqcE43wilzaSBcebM5e37aWCBMQEQz6MIod-9JDN4RZwrmYqhkI1WKFoFzOOHuO1JNhPY62TUHLJTxxGGyPYV2R16gNqXakyMj39bCeDeU29PDy6esFKGIIHEgnYfVox9fEsqqJcqYcHmgY"
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Marcos Valenzuela",
     role: "Jefe de Obra",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuA-E17aHmQMyl7ZsJfFGA6gHhq255pK5ypFJh88lA1RqT9eZcEQ2e46S847S0y1oOaoZb4-zLpmRQfZEfWdEi9vN69pZAyzGm41v05-lQf2_9sf_HoKsjJbcC7SemXEQzhbqL168-flWXB-hy-X7iIYlhWTcmIh1ZzQmmSPLUs7gJFD80taGgADtEA-Lxmywb0G6t8UofYpDbmLHqVYNCfPBIn7eqoReZuR8fQ_KJlvcYq65NLWs9S7P7CrshcEFBuUBizIL7UoF1U"
+    image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
   }
 ];
 
@@ -82,7 +82,7 @@ export function TeamSection() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link 
                 href="/contacto" 
-                className="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-secondary text-white px-10 py-5 rounded-full font-sans font-bold hover:bg-secondary/90 transition-all shadow-xl hover:scale-105"
+                className="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-white text-primary px-10 py-5 rounded-full font-sans font-bold hover:bg-white/90 transition-all shadow-xl hover:scale-105"
               >
                 Agendar Asesoría Gratuita
                 <ArrowRight className="w-5 h-5" />

@@ -176,7 +176,7 @@ export function ModelViewer() {
                   {/* CTA para el Embudo */}
                   <Link 
                     href={`/catalogo?modelo=${model.id}`}
-                    className="w-full inline-flex justify-center items-center gap-2 bg-secondary text-white px-8 py-4 rounded-full font-sans font-bold hover:bg-secondary/90 hover:shadow-lg transition-all"
+                    className="w-full inline-flex justify-center items-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-sans font-bold hover:bg-primary/90 hover:shadow-lg transition-all"
                   >
                     Configurar y Cotizar Llave en Mano
                     <ArrowRight className="w-5 h-5" />

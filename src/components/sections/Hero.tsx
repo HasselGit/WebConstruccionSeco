@@ -28,7 +28,7 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <Link 
               href="/contacto" 
-              className="inline-flex items-center justify-center gap-2 bg-secondary text-white px-8 py-4 rounded-full font-sans font-semibold hover:bg-secondary/90 transition-all shadow-lg hover:shadow-xl w-full sm:w-auto"
+              className="inline-flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-sans font-semibold hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl w-full sm:w-auto"
             >
               Comenzar tu Proyecto
               <ArrowRight className="w-5 h-5" />
@@ -51,8 +51,8 @@ export function Hero() {
         {/* Usamos un fade en el borde izquierdo para suavizar la transición en escritorio */}
         <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-background to-transparent z-10 hidden lg:block pointer-events-none"></div>
         <Image 
-          src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2075&q=80"
-          alt="Familia en un hogar moderno y cálido de construcción en seco"
+          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2075&q=80"
+          alt="Estructura de steel framing en construcción"
           fill
           priority={true}
           className="object-cover object-center"

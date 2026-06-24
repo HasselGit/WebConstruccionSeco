@@ -159,7 +159,7 @@ export default function FactibilidadPage() {
               <button 
                 onClick={handleScanLocation}
                 disabled={isScanning}
-                className="w-full mt-4 bg-secondary text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-secondary/90 transition-all shadow-md shadow-secondary/20 disabled:opacity-70"
+                className="w-full mt-4 bg-primary text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary/90 transition-all shadow-md disabled:opacity-70"
               >
                 {isScanning ? (
                   <>
