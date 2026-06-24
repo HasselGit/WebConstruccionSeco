@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Hero } from "@/components/sections/Hero";
 import { OriginSection } from "@/components/sections/OriginSection";
 import { FeaturesBento } from "@/components/sections/FeaturesBento";
+import { ModelViewer } from "@/components/sections/ModelViewer";
 import { TeamSection } from "@/components/sections/TeamSection";
 import { Footer } from "@/components/layout/Footer";
 
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <OriginSection />
         <FeaturesBento />
+        <ModelViewer />
         <TeamSection />
       </main>
       <Footer />
