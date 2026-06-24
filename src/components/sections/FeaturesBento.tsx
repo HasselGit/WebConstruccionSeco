@@ -89,19 +89,20 @@ export function FeaturesBento() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="flex flex-col md:grid md:grid-cols-3 lg:grid-cols-4 gap-6">
           {REASONS.map((reason, idx) => (
             <div 
               key={idx} 
-              className="bg-white p-8 rounded-2xl sunlight-shadow border border-border/40 transition-all duration-300 hover:scale-[1.02] hover:border-secondary/50 group flex flex-col"
+              className="bg-white p-6 md:p-8 rounded-2xl sunlight-shadow border border-border/40 transition-all duration-300 md:hover:scale-[1.02] md:hover:border-secondary/50 group flex flex-col sticky top-24 md:static z-10"
+              style={{ top: `calc(6rem + ${(idx % 12) * 6}px)` }}
             >
               <div className="mb-5 p-3 bg-secondary/5 text-secondary rounded-xl w-fit group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
                 <reason.icon className="w-8 h-8 stroke-[1.5]" />
               </div>
-              <h3 className="font-heading text-xl text-primary font-bold mb-3">
+              <h3 className="font-heading text-xl md:text-xl text-primary font-bold mb-3">
                 {reason.title}
               </h3>
-              <p className="font-sans text-foreground/70 leading-relaxed text-sm flex-1">
+              <p className="font-sans text-foreground/70 leading-relaxed text-base md:text-sm flex-1">
                 {reason.description}
               </p>
             </div>

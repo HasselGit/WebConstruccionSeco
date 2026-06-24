@@ -43,23 +43,23 @@ export function TeamSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 text-center md:text-left">
           {TEAM.map((member, idx) => (
-            <div key={idx} className="space-y-6 group cursor-pointer">
-              <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-border/40 sunlight-shadow grayscale group-hover:grayscale-0 transition-all duration-500 relative">
+            <div key={idx} className="space-y-4 md:space-y-6 group cursor-pointer">
+              <div className="aspect-[4/5] w-[200px] mx-auto md:w-full md:mx-0 rounded-2xl overflow-hidden border border-border/40 sunlight-shadow grayscale group-hover:grayscale-0 transition-all duration-500 relative">
                 <Image 
                   src={member.image}
                   alt={member.name}
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 768px) 200px, 33vw"
                 />
               </div>
               <div>
-                <h4 className="font-heading text-2xl text-primary font-bold">
+                <h4 className="font-heading text-xl md:text-2xl text-primary font-bold">
                   {member.name}
                 </h4>
-                <p className="text-secondary font-sans font-semibold tracking-wide uppercase text-sm mt-1">
+                <p className="text-secondary font-sans font-semibold tracking-wide uppercase text-xs md:text-sm mt-1">
                   {member.role}
                 </p>
               </div>
@@ -69,14 +69,14 @@ export function TeamSection() {
       </section>
 
       {/* CTA Final Envolvente */}
-      <section className="py-24 px-6 md:px-16 lg:px-24 w-full">
-        <div className="max-w-7xl mx-auto bg-primary rounded-[2rem] p-12 md:p-20 lg:p-24 text-center relative overflow-hidden sunlight-shadow">
+      <section className="py-16 md:py-24 px-4 md:px-16 lg:px-24 w-full">
+        <div className="max-w-7xl mx-auto bg-primary rounded-[2rem] p-8 md:p-20 lg:p-24 text-center relative overflow-hidden sunlight-shadow">
           <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
           <div className="relative z-10 max-w-3xl mx-auto">
-            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-white font-bold mb-8 leading-tight">
+            <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-white font-bold mb-6 md:mb-8 leading-tight">
               ¿Listo para construir su próximo capítulo?
             </h2>
-            <p className="font-sans text-lg md:text-xl text-white/80 mb-12 leading-relaxed">
+            <p className="font-sans text-base md:text-xl text-white/80 mb-8 md:mb-12 leading-relaxed">
               Permítanos guiarlo a través del proceso Stewardship. Una forma de construir donde su tranquilidad y la seguridad de su familia son nuestro cimiento principal.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
