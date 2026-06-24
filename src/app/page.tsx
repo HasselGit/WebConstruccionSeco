@@ -1,17 +1,19 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Hero } from "@/components/sections/Hero";
-import { AudienceSplit } from "@/components/sections/AudienceSplit";
-import { TechnicalFeatures } from "@/components/sections/TechnicalFeatures";
+import { OriginSection } from "@/components/sections/OriginSection";
+import { FeaturesBento } from "@/components/sections/FeaturesBento";
+import { TeamSection } from "@/components/sections/TeamSection";
 import { Footer } from "@/components/layout/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-stark-white">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <AudienceSplit />
-        <TechnicalFeatures />
+        <OriginSection />
+        <FeaturesBento />
+        <TeamSection />
       </main>
       <Footer />
     </div>
