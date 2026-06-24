@@ -34,6 +34,9 @@ function ConfiguratorContent() {
   const [isSuccess, setIsSuccess] = useState(false);
   const [total, setTotal] = useState(modelData.basePrice);
 
+  const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => setIsMounted(true), []);
+
   useEffect(() => {
     let currentTotal = modelData.basePrice;
     if (aberturasDVH) currentTotal += 3500;
@@ -110,7 +113,7 @@ function ConfiguratorContent() {
 
   if (isSuccess) {
     return (
-      <div className="flex flex-col items-center justify-center p-12 text-center bg-white rounded-[2rem] sunlight-shadow w-full max-w-2xl mx-auto border border-border/50 animate-fade-in">
+      <div className={`flex flex-col items-center justify-center p-12 text-center bg-white rounded-[2rem] sunlight-shadow w-full max-w-2xl mx-auto border border-border/50 transition-all duration-1000 ease-out will-change-transform ${isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-6 shadow-lg shadow-green-100/50">
           <CheckCircle2 className="w-10 h-10 text-green-600" />
         </div>
@@ -131,7 +134,7 @@ function ConfiguratorContent() {
   }
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+    <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto transition-all duration-1000 ease-out will-change-transform ${isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
       {/* Columna Izquierda: Visual e Info */}
       <div className="space-y-8">
         <div className="relative aspect-video rounded-[2rem] overflow-hidden sunlight-shadow">

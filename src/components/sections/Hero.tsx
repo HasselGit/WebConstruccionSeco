@@ -1,13 +1,19 @@
+'use client';
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Wrench } from "lucide-react";
 
 export function Hero() {
+  const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => setIsMounted(true), []);
+
   return (
     <section className="relative w-full min-h-[calc(100vh-80px)] flex flex-col lg:flex-row bg-background overflow-hidden">
       {/* Columna Izquierda: Texto y CTA */}
       <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 md:px-16 lg:px-24 py-16 lg:py-0 z-10">
-        <div className="max-w-xl animate-in fade-in slide-in-from-bottom-8 duration-1000">
+        <div className={`max-w-xl transition-all duration-1000 ease-out will-change-transform ${isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <span className="font-sans text-sm font-bold tracking-[0.2em] text-secondary uppercase mb-6 block">
             Stewardship Steel
           </span>
