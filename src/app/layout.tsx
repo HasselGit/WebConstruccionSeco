@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
+import { SyncProvider } from "@/components/providers/SyncProvider";
 
 const playfair = Playfair_Display({
   variable: "--font-heading",
@@ -29,7 +30,11 @@ export default function RootLayout({
       lang="es"
       className={`${playfair.variable} ${hanken.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground selection:bg-secondary/20 selection:text-secondary">{children}</body>
+      <body className="min-h-full flex flex-col bg-background text-foreground selection:bg-secondary/20 selection:text-secondary">
+        <SyncProvider>
+          {children}
+        </SyncProvider>
+      </body>
     </html>
   );
 }
