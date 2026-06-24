@@ -51,8 +51,8 @@ export function Hero() {
         {/* Usamos un fade en el borde izquierdo para suavizar la transición en escritorio */}
         <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-background to-transparent z-10 hidden lg:block pointer-events-none"></div>
         <Image 
-          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2075&q=80"
-          alt="Estructura de steel framing en construcción"
+          src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2075&q=80"
+          alt="Hogar moderno construido con sistema steel framing"
           fill
           priority={true}
           className="object-cover object-center"

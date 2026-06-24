@@ -17,7 +17,7 @@ const MODELS = [
       { icon: Maximize, label: "86 m² Cubiertos" },
     ],
     images: {
-      design: "/modelos/modelo-86.png",
+      design: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
       layout: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
     }
   },
@@ -32,7 +32,7 @@ const MODELS = [
       { icon: Maximize, label: "103 m² Totales" },
     ],
     images: {
-      design: "/modelos/modelo-103.png",
+      design: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
       layout: "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
     }
   },
@@ -47,7 +47,7 @@ const MODELS = [
       { icon: Maximize, label: "116 m² Cubiertos" },
     ],
     images: {
-      design: "/modelos/modelo-116.png",
+      design: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
       layout: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
     }
   },
@@ -62,8 +62,8 @@ const MODELS = [
       { icon: Maximize, label: "175 m² Totales" },
     ],
     images: {
-      design: "/modelos/modelo-175.png",
-      layout: "https://images.unsplash.com/photo-1600210491369-e753d80a41f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+      design: "https://images.unsplash.com/photo-1600210491369-e753d80a41f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+      layout: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
     }
   }
 ];
